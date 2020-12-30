@@ -19,8 +19,9 @@ export class UpdateProduitComponent implements OnInit {
                 this.router.navigate(['produits']);
               }
   ngOnInit(): void {
-    this.currentProduit = this.produitService.consulterProduit(this.activatedRoute.snapshot.params.id);
+  /*this.currentProduit = this.produitService.consulterProdui(this.activatedRoute.snapshot.params.id);
       console.log(this.currentProduit);
   }
-
+*/
+}
 }

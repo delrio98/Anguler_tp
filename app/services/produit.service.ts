@@ -5,6 +5,7 @@ import { Produit } from '../model/produit.model';
 })
 export class ProduitService {
   produits : Produit[];
+  produit: Produit = new Produit();
   constructor() { 
     this.produits = [
       {idProduit : 1, nomProduit : "PC Asus", prixProduit : 3000.600, dateCreation : new Date("01/14/2011")},
@@ -24,10 +25,10 @@ export class ProduitService {
       this.produits.splice(index, 1);
     }
   }
-  consulterProduit(id:number): Produit{
+ /*consulterProdui(id:number): Produit{
     this.produit = this.produits.find(p => p.idProduit == id );
     return this.produit;
-  }
+  }*/
   trierProduits(){
     this.produits = this.produits.sort((n1,n2) => {
       if (n1.idProduit > n2.idProduit){
